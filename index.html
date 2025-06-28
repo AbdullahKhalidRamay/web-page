@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmbrosiaAlcove Restaurant</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/8f7f00f702.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Login/SignUp Page -->
+    <div class="login-signup-container1 log" id="logout1">
+        <div class="center-div">
+            <div class="form-box">
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Signup</button>
+    
+                <div class="form" id="loginForm">
+                    <h2>Login</h2>
+                        <p style="color: red;display: none;" id="invalidMessage">Invalid username and password</p>
+                        <!-- Login form fields go here -->
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+    
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+    
+                        <button id="loginSubmitForm">Login</button>
+                
+                </div>
+    
+                <div class="form" id="signupForm">
+                    <h2>Signup</h2>
+                        <!-- Signup form fields go here -->
+                        <label for="newUsername">New Username:</label>
+                        <input type="text" id="newUsername" name="newUsername" required>
+                        
+                        <label for="newPassword">New Password:</label>
+                        <input type="password" id="newPassword" name="newPassword" required>
+                        <label for="Gender">Gender</label>
+                        <div class="gen1">
+                            <label for="">Male</label>
+                            <input type="radio" checked name="gende" id="">
+                            <label for="">Female</label>
+                            <input type="radio" name="gende" id="">
+                        </div>
+                        <button type="submit">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Page -->
+    <div class="container">
+
+        <menu class="menu" id="Home">
+            <div class="menu_left-section">
+                <a href=""><svg class="icons"><use class="icon1" xlink:href="img/icons/iconsuper.svg#icon-coffee"></use></svg></a>
+                <div class="menu_title title">Vacation Planner</div>
+            </div>
+        
+            <div class="menu_center-section">
+                <a href="#Home" class="btn btn41-43 btn-43">
+                    Home
+                </a>
+                <a href="#About" class="btn btn41-43 btn-43">
+                    About
+                </a>
+                <a href="#Gallery" class="btn btn41-43 btn-43">
+                    Gallery
+                </a>
+                <a href="#Contact" class="btn btn41-43 btn-43">
+                    Contact
+                </a>
+            </div>
+        
+            <div class="menu_right-section">
+                <input type="text" required placeholder="Search..." name="" id="search_input">
+                <a href="" class="search-icon"><svg class="icon2"><use class="icon2" xlink:href="img/icons/iconsuper.svg#icon-search"></use></svg></a>
+                <a id="logout12" href="#" onclick="logout1()" class="btn btn41-43 btn-43">
+                    Logout
+                </a>
+            </div>
+        </menu>
+    
+        
+    
+        <section id="Home" class="Home_container">
+            <div class="card">
+                <h2 class="title card_heading">Wanderlust Chronicles: Your Journey Begins with Vacation Planner</h2>
+                <p id="card_paragraph">Vacation Planner - where dreams meet destinations. Immerse yourself in the beauty of travel as we present a handpicked selection of awe-inspiring places. Your perfect vacation starts here.</p>
+                <button>Visit Us Today</button>
+            </div>
+        </section>
+
+
+
+
+        <section id="About" class="About_container">
+            <div class="about-content">
+                <h1 class="about-heading title">About Us</h1>
+                <div class="about-columns">
+                    <div class="about-left-column">
+                        <p>
+                            Welcome to Vacation Planner, a virtual haven for travel enthusiasts seeking to turn their wanderlust into reality. Our platform curates a diverse array of awe-inspiring destinations, each promising a unique blend of culture, adventure, and natural beauty. From the sun-kissed beaches of tropical paradises to the majestic landscapes of serene mountains, Vacation Planner is your compass to navigate the world's most enchanting places. Immerse yourself in the vivid imagery, detailed descriptions, and travel tips meticulously gathered to spark your curiosity and inspire your next adventure. Whether you're a seasoned traveler or planning your first getaway, our carefully crafted selection ensures that every journey is an opportunity to create indelible memories.
+                            <br>
+                            At Vacation Planner, we understand that travel is not just about reaching a destination; it's about embarking on a transformative experience. Each destination showcased on our platform is chosen with the intent to offer more than just a vacation—it's a journey that unfolds unique stories and opens new perspectives. As you navigate through our collection, envision yourself strolling through charming streets, indulging in local flavors, and capturing the essence of diverse cultures. Let Vacation Planner be your guide, inspiring you to explore the world and fostering a deep appreciation for the richness our planet has to offer. Your adventure begins here, where dreams of exploration and discovery come to life.
+                        </p>
+                    </div>
+                    <div class="about-right-column">
+                        <img src="img/img(5).jpg" alt="Restaurant Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+        <sections id="Gallery" class="Gallery_container">
+            <h1 class="gallery_heading">Gallery</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="img/steptodown.com353571.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="img/steptodown.com823342.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="img/img(1).jpg" alt="Slide 4"></div>
+                    <div class="slide"><img src="img/img(2).jpg" alt="Slide 4"></div>
+                    <div class="slide"><img src="img/img(3).jpg" alt="Slide 4"></div>
+                    <div class="slide"><img src="img/img(4).jpg" alt="Slide 4"></div>
+                    <div class="slide"><img src="img/img(5).jpg" alt="Slide 4"></div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <button class="arrow arrow-left" onclick="prevSlide()">&#8249;</button>
+                <button class="arrow arrow-right" onclick="nextSlide()">&#8250;</button>
+            </div>
+        </sections>
+
+
+
+
+
+        <section id="Contact" class="contact_container">
+            <div class="sub_container">
+                <div class="contact_header">
+                    <h2>Contact Us</h2>
+                </div>
+                <form class="contact_form">
+                    <div class="form_group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" required inputmode="kana-name" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form_group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" required inputmode="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form_group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" inputmode="katakana" required name="message" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="form_group form_btn">
+                        <input type="submit" class="btn" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Add more sections as needed -->
+    
+        <footer>
+            <div class="footer_container">
+                <div class="column">
+                    <h3>Links</h3>
+                    <a href="#Home">Home</a>
+                    <a href="#About">About Us</a>
+                    <a href="#Gallery">Gallery</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+                <div class="column">
+                    <div class="pr-member">
+                        <h3>Project Group Members</h3>
+                        <div id="pr-line"><div id="pr-line1"></div></div>
+                    </div>
+                    <div class="projectMembers">
+                        <h4>Mamoon Akhter</h4>
+                        <h4>Farquleet Ahsan</h4>
+                        <h4>Abdullah Khalid</h4>
+                        <h4>Muhammad Abdullah</h4>
+                        <h4>Feeman Mehmood</h4>
+                        <h4>Ali Azhar</h4>
+                    </div>
+                    
+                </div>
+                <div class="column">
+                    <div class="map-container">
+                        <!-- Embed Google Maps here -->
+                        <!-- Replace the iframe src attribute with your Google Maps embed code -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.629687014888!2d12.491076675792867!3d41.90082047123923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61af3dbdd04f%3A0xe7185ee292c97e96!2sAmbrosia%20Rooftop%20Restaurant%20%26%20Bar!5e0!3m2!1sen!2s!4v1700745383700!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        
+            <p>&copy; 2024 ICT Project. All rights reserved.</p>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="script/script.js"></script>
+    <script src="script/slider.js"></script>
+    <script src="script/loginsignup.js"></script>
+</body>
+</html>
